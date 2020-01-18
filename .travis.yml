@@ -19,7 +19,7 @@ env:
     - TWINE_USERNAME=__token__
       # Note: TWINE_PASSWORD is set in Travis settings
     - CIBW_BUILD="cp36-* cp37-*"
-    - CIBW_BEFORE_BUILD="pip install tensorflow && sed -i 's/libresolv.so.2\"/libresolv.so.2\", libtensorflow_framework.so.2/g' \$(find / -name policy.json)"
+    - CIBW_BEFORE_BUILD="pip install tensorflow && sed -i 's/libresolv.so.2\"/libresolv.so.2\", \"libtensorflow_framework.so.2\"/g' \$(find / -name policy.json)"
 
 install:
   - git clone https://github.com/deepmodeling/deepmd-kit -b v1.1.2
