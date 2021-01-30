@@ -25,9 +25,6 @@ jobs:
         name: Install Python
         with:
           python-version: '3.8'
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 14
 
       - name: Install cibuildwheel
         run: |
@@ -56,10 +53,7 @@ jobs:
         name: Install Python
         with:
           python-version: '3.8'
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 14
-
+      - run: pip install -U scikit-build tensorflow
       - name: Build sdist
         run: python setup.py sdist
 
