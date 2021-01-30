@@ -49,7 +49,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
+        with:
+          repository: 'deepmodeling/deepmd-kit'
+          ref: 'v1.2.2'
       - uses: actions/setup-python@v2
         name: Install Python
         with:
