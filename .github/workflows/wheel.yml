@@ -18,8 +18,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-        repository: 'deepmodeling/deepmd-kit'
-        ref: 'v1.2.2'
+        with:
+          repository: 'deepmodeling/deepmd-kit'
+          ref: 'v1.2.2'
       - uses: actions/setup-python@v2
         name: Install Python
         with:
