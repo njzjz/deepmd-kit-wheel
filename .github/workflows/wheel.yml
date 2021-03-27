@@ -3,7 +3,6 @@ name: Build and upload to PyPI
 on:
   push:
     branches:
-      - master
       - reacnetgenerator
     tags:
       - v*
@@ -21,7 +20,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           repository: 'tongzhugroup/reacnetgenerator'
-          ref: 'v1.4.162'
+          ref: 'v1.4.143'
       - uses: actions/setup-python@v2
         name: Install Python
         with:
@@ -49,7 +48,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           repository: 'tongzhugroup/reacnetgenerator'
-          ref: 'v1.4.162'
+          ref: 'v1.4.143'
       - uses: actions/setup-python@v2
         name: Install Python
         with:
