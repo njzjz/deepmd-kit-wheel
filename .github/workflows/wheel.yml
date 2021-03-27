@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           repository: 'deepmodeling/deepmd-kit'
-          ref: 'v1.0.1'
+          ref: 'v1.0.2'
       - uses: actions/setup-python@v2
         name: Install Python
         with:
@@ -48,7 +48,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           repository: 'deepmodeling/deepmd-kit'
-          ref: 'v1.0.1'
+          ref: 'v1.0.2'
       - uses: actions/setup-python@v2
         name: Install Python
         with:
